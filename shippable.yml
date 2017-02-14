@@ -1,0 +1,13 @@
+# Language setting
+language: java
+
+# Version number
+jdk:
+  - openjdk7
+  - openjdk8
+  - oraclejdk7
+  - oraclejdk8
+
+build:
+  ci:
+    - java -version
