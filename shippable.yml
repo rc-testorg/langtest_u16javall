@@ -11,7 +11,7 @@ jdk:
 build:
   ci:
     - java -version
-    #- ant -version
+    - ant -version
     - gradle --version
     - mvn --version
  
