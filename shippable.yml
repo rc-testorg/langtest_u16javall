@@ -11,9 +11,9 @@ jdk:
 build:
   ci:
     - java -version
-    - ant -version
     - gradle --version
     - mvn --version
+    - ant -version
  
   pre_ci_boot:
     image_name: drydock/u16javall
