@@ -9,14 +9,14 @@ jdk:
   - oraclejdk8
 
 build:
+   
+  pre_ci_boot:
+    image_name: drydock/u16javall
+    image_tag: master
+    pull: true 
+    
   ci:
     - java -version
     - gradle --version
     - mvn --version
     - ant -version
- 
-  pre_ci_boot:
-    image_name: drydock/u16javall
-    image_tag: master
-    pull: true 
-
