@@ -19,3 +19,5 @@ build:
     - gradle --version
     - mvn --version 
     - ant -version
+    - gradlew
+    
