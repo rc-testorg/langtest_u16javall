@@ -5,8 +5,10 @@ language: java
 jdk:
   - openjdk7
   - openjdk8
-  - oraclejdk7
+  - openjdk9
   - oraclejdk8
+  - oraclejdk9
+  
 build:
    
   pre_ci_boot:
@@ -15,7 +17,7 @@ build:
     pull: true 
     
   ci:
-    - java -version
-    - gradle --version
+    - java -version    
     - mvn --version 
-    - ant -version    
+    - ant -version  
+    - gradle --version
