@@ -20,4 +20,4 @@ build:
     - java -version    
     - mvn --version 
     - ant -version  
-    - gradle --version
+    - gradle --version 
