@@ -13,11 +13,12 @@ build:
    
   pre_ci_boot:
     image_name: drydock/u16javall
-    image_tag: master
+    image_tag: v5.6.1
     pull: true 
     
   ci:
-    - java -version    
+    - java -version  
+    - echo $SHIPPABLE_JDK_VERSION
     - mvn --version 
     - ant -version  
     - gradle --version 
