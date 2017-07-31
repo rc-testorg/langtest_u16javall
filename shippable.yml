@@ -19,6 +19,7 @@ build:
   ci:
     - java -version  
     - echo $SHIPPABLE_JDK_VERSION
+    - sudo docker images
     - mvn --version 
     - ant -version  
     - gradle --version 
