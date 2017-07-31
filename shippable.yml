@@ -13,7 +13,7 @@ build:
    
   pre_ci_boot:
     image_name: drydock/u16javall
-    image_tag: v5.7.3
+    image_tag: master
     pull: true 
     
   ci:
