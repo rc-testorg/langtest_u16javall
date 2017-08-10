@@ -10,9 +10,11 @@ jdk:
   - oraclejdk9
   
 build:
+  pre_ci_boot:
+   image_name: drydock/u16javall
+   image_tag: master
+   pull: true 
    
-
-    
   ci:
     - java -version  
     - echo $SHIPPABLE_JDK_VERSION
@@ -20,6 +22,4 @@ build:
     - mvn --version
     - gradle --version 
     - ant -version  
-    
-
-
+ 
